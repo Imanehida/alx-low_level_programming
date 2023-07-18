@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 
-int printPutchar() {
-return 0;
+void printPutchar() {
+
 }
 
 
 
 int main() {
-int printPutchar() {
+printPutchar() {
 printf("_putchar\n");
-return 0;
 }
 return 0;
 }
