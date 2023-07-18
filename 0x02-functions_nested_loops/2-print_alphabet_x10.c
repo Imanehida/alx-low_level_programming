@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 void print_alphabet_x10(void) {
-    int repetition = 0;
+    char letter = 'a';
+    int i;
 
-    while (repetition < 10) {
-        char letter = 'a';
-
+    for (i = 0; i < 10; i++) {
         while (letter <= 'z') {
-            _putchar(letter);
+            putchar(letter);
             letter++;
         }
-
-        repetition++;
+        letter = 'a';  // Reset letter to 'a' for the next line
+        putchar('\n');
     }
+}
 
-    _putchar('\n');
+int main(void) {
+    print_alphabet_x10();
+    return 0;
 }
