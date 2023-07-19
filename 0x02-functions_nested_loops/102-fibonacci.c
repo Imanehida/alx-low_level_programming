@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-    long long int fibonacci[50];
+    long fibonacci[50];
     int i;
 
     fibonacci[0] = 1;
@@ -19,10 +19,10 @@ int main(void)
 
     for (i = 0; i < 49; i++)
     {
-        printf("%lld, ", fibonacci[i]);
+        printf("%ld, ", fibonacci[i]);
     }
     
-    printf("%lld\n", fibonacci[49]);
+    printf("%ld\n", fibonacci[49]);
 
     return (0);
 }
