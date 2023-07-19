@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* Function to check if a character is lowercase */
-int islower(int c) {
+int _islower(int c) {
     /* ASCII value of lowercase alphabets ranges from 97 to 122 */
     if (c >= 'a' && c <= 'z')
         return 1;
@@ -12,11 +12,11 @@ int islower(int c) {
 int main(void) {
     int r;
 
-    r = islower('H');
+    r = _islower('H');
     putchar(r + '0');
-    r = islower('o');
+    r = _islower('o');
     putchar(r + '0');
-    r = islower(108);
+    r = _islower(108);
     putchar(r + '0');
     putchar('\n');
     return 0;
