@@ -10,22 +10,22 @@ int main(void)
 {
     int count = 3; /* this is so because the first 2 members have been given already. My loop will therefore begin from the 3rd one */
 
-    long int first = 1, second = 2;
-    long int next = first + second;
+    long long int first = 1, second = 2;
+    long long int next = first + second;
 
-    printf("%lu, ", first);
-    printf("%lu, ", second);
+    printf("%llu, ", first);
+    printf("%llu, ", second);
 
     while (count <= 50)
     {
         /* Let's check if we are at the end of the list, if we are close with a new line */
         if (count == 50)
         {
-            printf("%lu \n", next);
+            printf("%llu \n", next);
          }
          else  /* if we are not at the end of the list, add a comma after the number */
          { 
-           printf("%lu, ", next); 
+           printf("%llu, ", next); 
          }
 
         /* Reset the variables to get the next number */
