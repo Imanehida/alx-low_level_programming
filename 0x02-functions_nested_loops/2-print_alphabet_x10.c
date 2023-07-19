@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+int main(void) {
+    print_alphabet_x10();
+    return 0;}
 void print_alphabet_x10(void) {
     char letter = 'a';
     int i;
@@ -11,10 +13,4 @@ void print_alphabet_x10(void) {
         }
         letter = 'a';  /* Reset letter to 'a' for the next line */
         putchar('\n');
-    }
-}
-
-int main(void) {
-    print_alphabet_x10();
-    return 0;
-}
+	}
