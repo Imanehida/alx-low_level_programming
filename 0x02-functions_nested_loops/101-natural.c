@@ -1,18 +1,21 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-int sum = 0;
-int i;
-for (i = 0; i < 1024; i++)
+int count, n1 = 1, n2 = 2, next;
+printf("%d, %d, ", n1, n2);
+for (count = 3; count <= 50; count++)
 {
-if (i % 3 == 0 || i % 5 == 0)
-{sum += i;
+next = n1 + n2;
+printf("%d", next);
+if (count < 50)
+printf(", ");
+n1 = n2;
+n2 = next;
 }
-}
-printf("%d\n", sum);
-return (0);
+printf("\n");
+return 0;
 }
