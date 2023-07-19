@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-void print_alphabet_x10(void) {
+/**
+ * print_alphabet_x10 - Prints the alphabet in lowercase ten times.
+ */
+void print_alphabet_x10(void)
+{
     char letter = 'a';
     int i, j;
 
@@ -10,6 +14,7 @@ void print_alphabet_x10(void) {
             letter++;
         }
         putchar('\n');
-        letter = 'a';
+        letter = 'a'; /* Reset the letter to 'a' for the next line */
     }
 }
+
