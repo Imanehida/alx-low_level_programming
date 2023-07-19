@@ -5,10 +5,13 @@ void print_alphabet_x10(void) {
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 26; j++) {
-            _putchar(letter);
+           putchar(letter);
             letter++;
         }
-        _putchar('\n');
+        putchar('\n');
         letter = 'a'; // Reset the letter to 'a' for the next line
     }
+}int main(void) {
+    print_alphabet_x10();
+    return 0;
 }
