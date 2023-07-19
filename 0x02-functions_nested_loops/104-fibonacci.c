@@ -1,41 +1,16 @@
-#include <stdio.h>
-#include <gmp.h>
+def fibonacci_sequence(n):
+    a, b = 1, 2
+    sequence = [a, b]
 
-/**
- * print_fibonacci - Prints the first 98 Fibonacci numbers
- */
-void print_fibonacci(void)
-{
-    mpz_t a, b, next;
-    int count;
+    for _ in range(n - 2):
+        a, b = b, a + b
+        sequence.append(b)
 
-    mpz_init(a);
-    mpz_init(b);
-    mpz_init(next);
+    return sequence
 
-    mpz_set_ui(a, 1);
-    mpz_set_ui(b, 2);
+def print_fibonacci_numbers():
+    n = 98
+    sequence = fibonacci_sequence(n)
+    print(", ".join(str(num) for num in sequence))
 
-    printf("%s, %s", mpz_get_str(NULL, 10, a), mpz_get_str(NULL, 10, b));
-
-    for (count = 2; count < 98; count++)
-    {
-        mpz_add(next, a, b);
-        printf(", %s", mpz_get_str(NULL, 10, next));
-
-        mpz_set(a, b);
-        mpz_set(b, next);
-    }
-
-    printf("\n");
-
-    mpz_clear(a);
-    mpz_clear(b);
-    mpz_clear(next);
-}
-
-int main(void)
-{
-    print_fibonacci();
-    return 0;
-}
+print_fibonacci_numbers()
