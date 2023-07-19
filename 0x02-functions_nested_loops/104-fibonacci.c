@@ -1,16 +1,32 @@
-def fibonacci_sequence(n):
-    a, b = 1, 2
-    sequence = [a, b]
+#include <stdio.h>
 
-    for _ in range(n - 2):
-        a, b = b, a + b
-        sequence.append(b)
+int fibonacci_sequence(int n) {
+    int a = 1, b = 2, c;
+    if (n == 1) {
+        printf("%d", a);
+        return a;
+    }
+    if (n == 2) {
+        printf("%d, %d", a, b);
+        return b;
+    }
 
-    return sequence
+    printf("%d, %d, ", a, b);
+    for (int i = 3; i <= n; i++) {
+        c = a + b;
+        if (i != n)
+            printf("%d, ", c);
+        else
+            printf("%d\n", c);
+        a = b;
+        b = c;
+    }
 
-def print_fibonacci_numbers():
-    n = 98
-    sequence = fibonacci_sequence(n)
-    print(", ".join(str(num) for num in sequence))
+    return c;
+}
 
-print_fibonacci_numbers()
+int main() {
+    int n = 98;
+    fibonacci_sequence(n);
+    return 0;
+}
