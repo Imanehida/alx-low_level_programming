@@ -21,7 +21,7 @@ int main(void)
     {
         printf("%ld, ", fibonacci[i]);
     }
-    
+
     printf("%ld\n", fibonacci[49]);
 
     return (0);
