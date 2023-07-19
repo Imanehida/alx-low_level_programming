@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    unsigned long long int fib[3] = {1, 2, 0}; 
-    unsigned long long int sum = 2; 
+    long int fib[3] = {1, 2, 0}; 
+    long int sum = 2; 
 
     while (fib[2] < 4000000)
     {
@@ -17,7 +17,7 @@ int main(void)
         fib[1] = fib[2]; 
     }
 
-    printf("%llu\n", sum); 
+    printf("%lu\n", sum); 
 
     return (0);
 }
