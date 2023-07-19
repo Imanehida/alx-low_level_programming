@@ -20,7 +20,7 @@ void print_times_table(int n)
 			if (j == 0)
 				printf("%d", result);
 			else
-				printf(",%4d", result); // Use "%4d" format for proper spacing
+				printf(",%4d", result); 
 		}
 		printf("\n");
 	}
