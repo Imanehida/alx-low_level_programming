@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int _islower(int c) {
-    if (c >= 'a' && c <= 'z') {
+int islower(int c) {
+    if (c >= 97 && c <= 122) {
         return 1; /* Caractère en minuscule */
     } else {
         return 0; /* Caractère non en minuscule */
@@ -11,7 +11,7 @@ int _islower(int c) {
 int main(void) {
     char character = 'A';
 
-    if (_islower(character)) {
+    if (islower((int)character)) {
         printf("Le caractère %c est en minuscule.\n", character);
     } else {
         printf("Le caractère %c n'est pas en minuscule.\n", character);
@@ -19,3 +19,4 @@ int main(void) {
 
     return 0;
 }
+
