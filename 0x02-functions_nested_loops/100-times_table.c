@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_times_table - Prints the n 
- * times table, starting with 0.
+ * print_times_table - Prints the n times table, starting with 0.
  * @n: The value for which the times table is to be printed.
  * Return: void.
  */
@@ -21,8 +20,7 @@ void print_times_table(int n)
 			if (j == 0)
 				printf("%d", result);
 			else
-				printf(", %d", result / 100);
-			printf("%02d", result % 100);
+				printf(",%4d", result); // Use "%4d" format for proper spacing
 		}
 		printf("\n");
 	}
