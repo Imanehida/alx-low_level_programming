@@ -6,11 +6,10 @@
 int main(void)
 {
 int i;
-printf("Infinite loop incoming :(\n");
+iprintf("Infinite loop incoming :(\n");
 i = 0;
 /* Commented out the infinite loop to avoid the issue */
-/*
-while (i < 10)
+/* while (i < 10)
 {
 putchar(i);
 }
