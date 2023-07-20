@@ -6,7 +6,7 @@
 int main(void)
 {
 int i;
-iprintf("Infinite loop incoming :(\n");
+printf("Infinite loop incoming :(\n");
 i = 0;
 /* Commented out the infinite loop to avoid the issue */
 /* while (i < 10)
