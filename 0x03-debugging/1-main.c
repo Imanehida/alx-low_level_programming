@@ -1,19 +1,27 @@
 #include <stdio.h>
+
 /**
- * main - causes an infinite loop
- * Return: 0 
- * */
+ * print_numbers - Prints numbers from 0 to 9
+ * Return: None
+ */
+void print_numbers(void)
+{
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("%d", i);
+    }
+    printf("\n");
+}
+
+/**
+ * main - Entry point
+ * Return: 0
+ */
 int main(void)
 {
-int i;
-printf("Infinite loop incoming :(\n");
-i = 0;
-/* Commented out the infinite loop to avoid the issue */
-/* while (i < 10)
-{
-putchar(i);
-}
-*/
-printf("Infinite loop avoided! \\o/\n");
-return (0);
+    printf("Printing numbers from 0 to 9:\n");
+    print_numbers();
+    return (0);
 }
